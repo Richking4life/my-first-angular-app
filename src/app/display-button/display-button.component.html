@@ -1,0 +1,9 @@
+
+
+<button [disabled]="!isDisabled" (click)="onToggleDetails()"
+class="btn btn-primary" [innerText]="paragraph" ></button>
+
+<div *ngIf="display">
+<p>{{"Secret password ='tuna'"}}</p>  
+<div  *ngFor="let logItem of log">{{logItem}}</div>
+</div>
