@@ -1,3 +1,4 @@
+
 <label>Server Name</label>
 <!--<input 
 type="text"
@@ -10,7 +11,8 @@ type="text"
 
 
 <p>{{serverName}}</p>
-<button [disabled]="!allowNewServer"
+<button 
+[disabled]="!allowNewServer"
  (click)="onCreateServer()"
 class="btn btn-primary">Add Server
 </button>

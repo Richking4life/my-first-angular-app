@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-display-button',
-  templateUrl: './display-button.component.html'
+  templateUrl: './display-button.component.html',
+    styleUrls: ['./display-button.component.css']
+  
 })
 export class DisplayButtonComponent  {
   display: boolean = false;

@@ -7,16 +7,29 @@
             <h3>I'm in the App Component</h3>
             <hr>
            <app-servers></app-servers>
-
-          <hr> 
-    <app-display-button></app-display-button>
-    <hr>
-           <div app-warming-alert></div>
-        <div class="app-success-alert"></div>
-           
-       <!--    <div app-servers></div>
-       <div class="app-servers"></div>-->
-        </div>
-
+          <hr>     
+          <app-display-button></app-display-button>    
+          <hr>
+           <div app-warming-alert></div>        
+           <div class="app-success-alert"></div>         
+        </div>       
     </div>
 </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ol>
+                <li>Add a Input field which updates a property ('username') via Two-Way-Binding</li>
+                <li>Output the username property via String Interpolation (in a paragraph below the input)</li>
+                <li>Add a button which only be clicked if the username is NOT  an empty string</li>
+                <li>Upon clicking the button, the username should be reset to an empty string</li>
+            </ol>
+            <hr>
+            <label>Username</label>
+            <input type="text" [(ngModel)]="username" class="form-control">
+            <p [innerText]="username"></p>
+            <button (click)="username=''" class="btn btn-primary" [disabled]="username===''">Reset User</button>
+        </div>
+    </div>         
+</div> 
